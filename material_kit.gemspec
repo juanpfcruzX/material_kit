@@ -35,7 +35,7 @@ Gem::Specification.new do |spec|
 
     You can now run the following generator to install Material Kit to your rails app.
 
-    rails generate gsdk:install
+    rails generate material_kit:install
   DOC
 
 end
