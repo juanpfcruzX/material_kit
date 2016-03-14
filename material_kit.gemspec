@@ -15,9 +15,10 @@ Gem::Specification.new do |spec|
 
   spec.files = Dir["{app,lib}/**/*"].reject{ |f|
                   f['app/assets/javascripts/bootstrap3/bootstrap.min.js'] ||
-                  f['app/assets/javascripts/jquery/jquery-1.10.2.js'] ||
-                  f['app/assets/javascripts/jquery/jquery-ui.custom.min.js'] ||
-                  f['app/assets/stylesheets/bootstrap3/bootstrap.min.css'] } +
+                  f['app/assets/javascripts/material_kit/bootstrap.min.js'] ||
+                  f['app/assets/javascripts/material_kit/jquery.js'] ||
+                  f['app/assets/stylesheets/bootstrap3/bootstrap.min.css'] ||
+                  f['app/assets/stylesheets/material_kit/bootstrap.min.css'] } +
                Dir["*.gemspec"] +
                ["README.md"]
 

@@ -1,3 +1,4 @@
 module MaterialKit
-  VERSION = "0.1.0"
+  GSDK_VERSION = "alpha"
+  VERSION = "alpha"
 end
