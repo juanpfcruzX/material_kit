@@ -1,0 +1,172 @@
+.btn{
+    border-width: $border-thin;
+    font-weight: $font-weight-normal;
+    line-height: $line-height-general;
+    font-size: $font-size-small;
+    //letter-spacing: $letter-spacing-button;
+    padding: $padding-base-vertical $padding-base-horizontal;
+    text-transform: uppercase;
+    border-radius: $border-radius-small;
+
+    @include btn-styles($default-color, $default-states-color);
+
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+
+    @extend .fast-animation;
+
+    &:hover,
+    &:focus{
+        @include opacity(1);
+        outline: 0 !important;
+        box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);
+        //@include transform-translate-y(-1px);
+    }
+    &:active,
+    &.active,
+    .open > &.dropdown-toggle {
+         @include box-shadow(none);
+         outline: 0 !important;
+    }
+
+    .material-icons{
+        font-size: $font-size-base;
+        position: relative;
+        top: 3px;
+        margin: -3px 3px 0;
+    }
+
+    .fa{
+        font-size: 14px;
+        position: relative;
+        top: 1px;
+        margin: 0 3px;
+    }
+
+    &.btn-just-icon{
+        padding: $padding-base-vertical;
+        line-height: 1;
+        font-size: $font-size-base;
+
+        .fa{
+            margin: 0;
+            padding: 2px;
+            top: 0;
+        }
+        .material-icons{
+            margin: 0;
+            top:0;
+            display: block;
+            padding: 2px;
+        }
+    }
+
+}
+
+// Apply the mixin to the buttons
+//.btn-default { @include btn-styles($default-color, $default-states-color); }
+.btn-primary { @include btn-styles($primary-color, $primary-states-color); }
+.btn-success { @include btn-styles($success-color, $success-states-color); }
+.btn-info    { @include btn-styles($info-color, $info-states-color); }
+.btn-warning { @include btn-styles($warning-color, $warning-states-color); }
+.btn-danger  { @include btn-styles($danger-color, $danger-states-color); }
+.btn-neutral {
+    @include btn-styles($white-color, $white-color);
+
+    &:active,
+    &.active,
+    .open > &.dropdown-toggle{
+         background-color: $white-color;
+         color: $default-color;
+    }
+
+    &.btn-fill,
+    &.btn-fill:hover,
+    &.btn-fill:focus{
+        color: $default-color;
+    }
+
+    &.btn-simple:active,
+    &.btn-simple.active{
+        background-color: transparent;
+    }
+}
+
+.btn{
+     &:disabled,
+     &[disabled],
+     &.disabled{
+        @include opacity(.5);
+    }
+}
+.btn-round{
+    border-radius: $btn-round-radius !important;
+    padding: $padding-round-vertical $padding-round-horizontal;
+
+    &.btn-just-icon{
+        padding: $padding-round-vertical;
+    }
+}
+.btn-simple{
+    border: $none;
+    font-size: $font-size-base;
+    padding: $padding-simple-vertical $padding-simple-horizontal;
+
+    background: $transparent-bg;
+    border-color: $transparent-bg;
+
+    box-shadow: none;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.active,
+    &:active:focus,
+    &:active:hover,
+    &.active:focus,
+    &.active:hover,
+    .open > &.dropdown-toggle{
+        background-color: $transparent-bg;
+        box-shadow: none;
+    }
+
+    &.btn-just-icon{
+        padding: $padding-base-vertical;
+    }
+}
+.btn-lg{
+   @include btn-size($padding-large-vertical, $padding-large-horizontal, $font-size-base, $border-radius-base);
+   font-weight: $font-weight-normal;
+
+   .material-icons{
+       font-size: $font-size-large;
+   }
+
+   &.btn-just-icon{
+       padding: $padding-large-vertical + 1;
+
+       .material-icons{
+           font-size: 22px;
+       }
+   }
+}
+.btn-sm{
+    @include btn-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $border-radius-small);
+}
+.btn-xs {
+    @include btn-size($padding-xs-vertical, $padding-xs-horizontal, $font-size-small, $border-radius-small);
+}
+.btn-group.select{
+    width: 100%;
+}
+.btn-group.select .btn{
+    text-align: left;
+}
+.btn-group.select .caret{
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    right: 8px;
+}
+.btn-wd {
+    min-width: 140px;
+}

@@ -1,0 +1,135 @@
+.main{
+    background: #FFFFFF;
+
+    &.main-raised{
+        margin: -70px 30px 30px;
+        position: relative;
+        z-index: 3;
+        border-radius: $border-radius-base * 2;
+
+        @include shadow-16dp();
+    }
+}
+
+.title{
+    font-weight: $font-weight-bold;
+    color: $black-color;
+}
+.description{
+    color: $gray-light;
+}
+
+// general style for example pages
+.header-filter{
+    position: relative;
+
+    &:after{
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        display: block;
+        left: 0;
+        top: 0;
+        content: "";
+        background-color: rgba(0,0,0,.4);
+    }
+
+    .container{
+        z-index: 2;
+        position: relative;
+    }
+
+}
+.features{
+    padding: 80px 0 0;
+
+    .feature{
+        max-width: 360px;
+        margin: 0 auto;
+
+        > i{
+            font-size: 60px;
+        }
+        h4{
+            color: $black-color;
+            margin: $margin-base * 2 0 $margin-base;
+        }
+
+        &.feature-primary{
+            > i{
+                color: $brand-primary;
+            }
+        }
+        &.feature-info{
+            > i{
+                color: $brand-info;
+            }
+        }
+        &.feature-success{
+            > i{
+                color: $brand-success;
+            }
+        }
+        &.feature-warning{
+            > i{
+                color: $brand-warning;
+            }
+        }
+        &.feature-danger{
+            > i{
+                color: $brand-danger;
+            }
+        }
+    }
+}
+
+.team{
+    margin-top: 80px;
+
+    .team-player{
+        img{
+            max-width: 200px;
+        }
+    }
+}
+
+.navbar-absolute{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 1031;
+}
+
+// style for the landing page
+
+.landing-page{
+
+    .navbar-transparent{
+        top: 20px;
+    }
+    .header{
+        height: 100vh;
+        background-position: center center;
+        background-size: cover;
+
+        .container{
+            padding-top: 26vh;
+            color: #FFFFFF;
+        }
+
+        .share{
+            margin-top: 150px;
+        }
+        h1{
+            font-weight: 600;
+        }
+        .title{
+            color: $white-color;
+        }
+    }
+
+    .wrapper{
+        background: #CCCCCC;
+    }
+}
