@@ -34,4 +34,19 @@ $(document).on("page:change", function() {
     // the body of this function is in assets/material-kit.js
     $(window).on('scroll', materialKit.checkScrollForTransparentNavbar);
   }
+  if ($.inArray('components-page',App.features()) >= 0) {
+    var header_height;
+    var fixed_section;
+    var floating = false;
+
+    $().ready(function(){
+        suggestions_distance = $("#suggestions").offset();
+        pay_height = $('.fixed-section').outerHeight();
+
+  $(window).on('scroll', materialKit.checkScrollForTransparentNavbar);
+
+  // the body of this function is in assets/material-kit.js
+  materialKit.initSliders();
+    });
+  }
 });

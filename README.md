@@ -195,6 +195,14 @@ Generate tutorial page view at app/views/CONTROLLER/ACTION
 rails g material_kit:tutorial_page CONTROLLER ACTION
 ```
 
+### COMPONENTS PAGE GENERATOR
+
+Generate components page view at app/views/CONTROLLER/ACTION
+
+```
+rails g material_kit:components_page CONTROLLER ACTION
+```
+
 [Back to top](#table-of-content)
 
 ## Changelog
