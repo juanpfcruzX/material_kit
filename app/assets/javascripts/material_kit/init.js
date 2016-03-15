@@ -16,8 +16,22 @@ App.features = function() {
 };
 
 // Define the default feature in here
-// $(document).on("page:change", function() {
-//   if ($.inArray('feature1',App.features()) >= 0) {
-//     Write your feature1 init script here ...
-//   }
-// });
+$(document).on("page:change", function() {
+  if ($.inArray('profile-page',App.features()) >= 0) {
+    // the body of this function is in assets/material-kit.js
+    $(window).on('scroll', materialKit.checkScrollForTransparentNavbar);
+  }
+  if ($.inArray('index-page',App.features()) >= 0) {
+    // the body of this function is in assets/material-kit.js
+    materialKit.initSliders();
+    $(window).on('scroll', materialKit.checkScrollForTransparentNavbar);
+  }
+  if ($.inArray('signup-page',App.features()) >= 0) {
+    // the body of this function is in assets/material-kit.js
+    $(window).on('scroll', materialKit.checkScrollForTransparentNavbar);
+  }
+  if ($.inArray('tutorial-page',App.features()) >= 0) {
+    // the body of this function is in assets/material-kit.js
+    $(window).on('scroll', materialKit.checkScrollForTransparentNavbar);
+  }
+});

@@ -1,7 +1,7 @@
 module MaterialKit
   class Engine < ::Rails::Engine
     initializer 'material_kit.setup' do |app|
-      app.config.assets.precompile += %w( material_kit/avatar.jpg material_kit/christian.jpg material_kit/kendall.jpg )
+      app.config.assets.precompile += Dir.glob(config.root + 'app/assets/images/material_kit/**/*').select{ |f| File.file? f }.map { |m| "material_kit/" +  File.path(m).split("material_kit/").last }
     end
 
     initializer 'material_kit.sass' do |app|

@@ -1,8 +1,9 @@
 footer{
-    padding: $padding-base * 2 0;
+    padding: $padding-base 0;
 
     ul{
     margin-bottom: 0;
+    padding: 0;
     list-style: none;
 
         li{
@@ -17,11 +18,17 @@ footer{
                 border-radius: $border-radius-base;
                 text-decoration: none;
                 position: relative;
+                display: block;
+
+                &:hover{
+                    text-decoration: none;
+                }
             }
         }
     }
 
     .copyright{
+        padding: 15px 0;
         .material-icons{
             font-size: 18px;
             position: relative;

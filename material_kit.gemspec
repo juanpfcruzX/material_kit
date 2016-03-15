@@ -14,11 +14,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://uiready.io/items/material-kit-rails-version"
 
   spec.files = Dir["{app,lib}/**/*"].reject{ |f|
-                  f['app/assets/javascripts/bootstrap3/bootstrap.min.js'] ||
-                  f['app/assets/javascripts/material_kit/bootstrap.min.js'] ||
-                  f['app/assets/javascripts/material_kit/jquery.js'] ||
-                  f['app/assets/stylesheets/bootstrap3/bootstrap.min.css'] ||
-                  f['app/assets/stylesheets/material_kit/bootstrap.min.css'] ||
+                  f['app/assets/javascripts/material_kit/jquery.min.js'] ||
                   f['mk_alpha.zip'] ||
                   f['x_material_kit_beta.zip'] } +
                Dir["*.gemspec"] +

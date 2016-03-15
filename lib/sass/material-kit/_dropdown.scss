@@ -2,9 +2,22 @@
     border: 0;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 
+    @include transition($fast-transition-time, $transition-linear);
+    margin-top: -20px;
+    opacity: 0;
+    visibility: hidden;
+    display: block;
+
+    .open &{
+        opacity: 1;
+        visibility: visible;
+        margin-top: 1px;
+    }
+
     .divider {
         background-color: rgba(0, 0, 0, .12);
     }
+
 
     li > a{
         font-size: $mdb-dropdown-font-size;
@@ -16,14 +29,17 @@
         &:hover,
         &:focus {
           @include shadow-8dp();
+
         }
     }
 
     li {
         position: relative;
-        a:hover {
-            background-color: transparent;
-            color: $brand-primary;
+        a:hover,
+        a:focus,
+        a:active {
+            background-color: $brand-primary;
+            color: #FFFFFF;
         }
     }
 

@@ -1,5 +1,8 @@
 //= depend_on_asset "material_kit/bg.jpg"
 
+.index-page{
+    background: #FFFFFF;
+}
 .tim-row{
     margin-bottom: 20px;
 }
@@ -67,6 +70,7 @@
 }
 
 .navigation-example{
+
     background-image: url('<%= image_path('material_kit/bg.jpg') %>');
     background-position: center center;
     background-size: cover;
@@ -81,24 +85,6 @@
 }
 .tim-note{
     text-transform: capitalize;
-}
-
-.footer-card{
-    background-color: #FFFFFF;
-    padding: 10px 0 20px;
-    width: 100%;
-}
-.footer-card h3{
-/*     margin-bottom: 20px; */
-}
-.footer-card button{
-/*     margin-top: 30px; */
-}
-.subscribe-form{
-    padding-top: 20px;
-}
-.subscribe-form .form-control{
-
 }
 
 #buttons .btn{
@@ -122,32 +108,6 @@
     color: #ddd !important;
 }
 
-.social-share{
-    float: left;
-    margin-right: 8px;
-}
-.social-share a{
-    color: #FFFFFF;
-}
-#subscribe_email{
-    border-radius: 0;
-    border-left: 0;
-    border-right: 0;
-}
-.pick-class-label{
-    border-radius: 8px;
-    color: #ffffff;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 75%;
-    font-weight: bold;
-    line-height: 1;
-    margin-right: 10px;
-    padding: 23px;
-    text-align: center;
-    vertical-align: baseline;
-    white-space: nowrap;
-}
 
 .parallax{
   width:100%;
@@ -170,17 +130,20 @@
 }
 
 .logo-container .brand{
-    font-size: 18px;
+    font-size: 16px;
     color: #FFFFFF;
-    line-height: 20px;
+    line-height: 18px;
     float: left;
     margin-left: 10px;
-    margin-top: 5px;
-    width: 50px;
-    height: 50px;
+    margin-top: 7px;
+    width: 70px;
+    height: 40px;
 }
-.logo-container{
-    margin-top: 10px;
+.logo-container .brand-material{
+    font-size: 18px;
+    margin-top: 15px;
+    height: 25px;
+    width: auto;
 }
 .logo-container .logo img{
     width: 100%;
@@ -188,51 +151,32 @@
 .navbar-small .logo-container .brand{
     color: #333333;
 }
-.parallax .motto{
-    color: #FFFFFF;
-    font-size: 64px;
-    font-weight: 600;
-    position: relative;
-    text-align: center;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.27);
-    text-transform: uppercase;
-    z-index: 3;
-    margin: 0 auto;
-    top: 22%;
-    width: 285px;
+
+.fixed-section{
+    top: 90px;
+    max-height: 80vh;
+    overflow: scroll;
 }
-.motto .pro{
-    position: absolute;
-    bottom: 74px;
-    right: -28px;
-    font-size: 18px;
-    background-color: #FFFFFF;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 70px;
-    color: #333333;
-    text-shadow: 0 0 0;
+.fixed-section ul li{
+    list-style: none;
 }
-.parallax .motivation{
-    color: #FFFFFF;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.27);
-    top: 400px;
-    position: absolute;
-    text-align: center;
-    width: 100%;
-/*     font-size: 25px; */
+.fixed-section li a{
+    font-size: 14px;
+    padding: 2px;
+    display: block;
+    color: #666666;
 }
-.parallax .motto .border{
-    float: left;
-    border: 3px solid #FFFFFF;
-    padding: 0px 30px;
-    text-align: center;
+.fixed-section li a.active{
+    color: #00bbff;
 }
-.parallax .motto .no-right-border{
-    border-right: none;
+.fixed-section.float{
+    position: fixed;
+    top: 100px;
+    width: 200px;
+    margin-top: 0;
 }
+
+
 .parallax .parallax-image{
     width: 100%;
     overflow: hidden;
@@ -251,11 +195,6 @@
     .parallax .parallax-image img{
        height: 100%;
        width: auto;
-   }
-   .parallax .motivation {
-    text-shadow: 0 0 10px rgba(0, 0, 0, 1);
-    padding: 5px;
-    font-size: 20px !important ;
    }
 }
 
@@ -315,33 +254,6 @@
     }
 }
 
-.presentation .loader{
-    opacity: 0;
-    display: block;
-    transition: all 0.4s;
-    -webkit-transition: all 0.4s;
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    z-index: 1031;
-    margin-left: -32px;
-    margin-top: -32px;
-}
-.presentation  .loader.visible{
-    display: block;
-    opacity: 1;
-}
-.presentation  .modal-content{
-    background-color: transparent;
-    box-shadow: 0 0 0;
-}
-.presentation .modal-backdrop.in{
-    opacity: 0.45;
-}
-.presentation .preload-image{
-    display: none;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15), 0 0 1px 1px rgba(0, 0, 0, 0.1);
-}
 /*       Loading dots  */
 
 /*      transitions */
@@ -350,40 +262,6 @@
     -moz-transition: all .2s;
     -o-transition: all .2s;
     transition: all .2s;
-}
-
-.presentation .section-gray-gradient{
-    background: rgb(255,255,255); /* Old browsers */
-    background: -moz-linear-gradient(top,  rgba(255,255,255,1) 25%, rgba(231,231,231,1) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(25%,rgba(255,255,255,1)), color-stop(100%,rgba(231,231,231,1))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 25%,rgba(231,231,231,1) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  rgba(255,255,255,1) 25%,rgba(231,231,231,1) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  rgba(255,255,255,1) 25%,rgba(231,231,231,1) 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  rgba(255,255,255,1) 25%,rgba(231,231,231,1) 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e7e7e7',GradientType=0 ); /* IE6-9 */
-}
-
-
-.fixed-section{
-    margin-top: 90px;
-}
-.fixed-section ul li{
-    list-style: none;
-}
-.fixed-section li a{
-    font-size: 14px;
-    padding: 2px;
-    display: block;
-    color: #666666;
-}
-.fixed-section li a.active{
-    color: #00bbff;
-}
-.fixed-section.float{
-    position: fixed;
-    top: 100px;
-    width: 200px;
-    margin-top: 0;
 }
 
 
@@ -396,39 +274,7 @@
 #javascriptComponents .btn-raised{
     margin: 10px 5px;
 }
-@media (max-width: 1200px){
-    .presentation .section-images .image img{
-        width: 100%;
-    }
 
-}
-.presentation .card-text-adjust{
-    padding-left: 40px;
-}
-.presentation .info.info-separator{
-    position: relative;
-}
-.presentation .info.info-separator:after{
-    height: 100%;
-    position: absolute;
-    background-color: #ccc;
-    width: 1px;
-    content: "";
-    right: -7px;
-    top: 0;
-}
-.presentation .info li{
-    padding: 5px 0;
-    border-bottom: 1px solid #E5E5E5;
-    color: #666666;
-}
-.presentation .info ul{
-    width: 240px;
-    margin: 10px auto;
-}
-.presentation .info li:last-child{
-    border: 0;
-}
 
 /*      layer animation          */
 
@@ -450,34 +296,11 @@
   background-color: #333;
 }
 
-#layerHover{
-  top: 30px;
-}
-#layerImage{
-    top: 50px;
-}
-#layerBody{
-  top: 75px;
-}
-
 .animate {
   transition: 1.5s ease-in-out;
   -moz-transition: 1.5s ease-in-out;
   -webkit-transition: 1.5s ease-in-out;
 }
-
-.down {
-  transform: translate(0,45px);
-  -moz-transform: translate(0,45px);
-  -webkit-transform: translate(0,45px);
-}
-
-.down-2x {
-   transform: translate(0,90px);
-  -moz-transform: translate(0,90px);
-  -webkit-transform: translate(0,90px);
-}
-
 
 .navbar-default.navbar-small .logo-container .brand{
     color: #333333;
@@ -489,48 +312,6 @@
     color: #333333;
 }
 
-.info.info-separator{
-    position: relative;
-}
-.info.info-separator:after{
-    height: 100%;
-    position: absolute;
-    background-color: #ccc;
-    width: 1px;
-    content: "";
-    right: -7px;
-    top: 0;
-}
-@media (max-width: 767px){
-.info.info-separator:after{
-    display: none;
-  }
-}
-.info li{
-    padding: 5px 0;
-    border-bottom: 1px solid #E5E5E5;
-    color: #666666;
-}
-.info ul{
-    width: 240px;
-    margin: 10px auto;
-}
-.info li:last-child{
-    border: 0;
-}
-.payment-methods i {
-    font-size: 28px;
-    padding: 0 3px;
-    width: 38px;
-}
-.payment-methods h4 {
-    font-size: 18px;
-    line-height: 38px;
-}
-.info .description .btn{
-    width: 240px;
-    font-weight: 500;
-}
 .sharing-area{
     margin-top: 80px;
 }
@@ -550,4 +331,15 @@
 }
 .section-download h4{
     margin-bottom: 50px;
+}
+.components-page .wrapper > .header,
+.tutorial-page .wrapper > .header{
+    height: 400px;
+    padding-top: 100px;
+    background-size: cover;
+    background-position: center center;
+}
+.components-page .title,
+.tutorial-page .title{
+    color: #FFFFFF;
 }

@@ -1,45 +1,44 @@
 <% content_for :features, "landing-page" %>
 <% content_for :class, "landing-page" %>
 
-<nav class="navbar navbar-transparent navbar-absolute" role="navigation-demo" id="demo-navbar">
+<nav class="navbar navbar-transparent navbar-absolute">
   <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="www.creative-tim.com">Creative Tim</a>
-    </div>
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://www.creative-tim.com">Creative Tim</a>
+      </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="navigation-example-2">
-      <ul class="nav navbar-nav navbar-right">
-        <li>
-            <a href="../presentation.html#components" class="btn btn-simple">Components</a>
-        </li>
-        <li>
-            <a href="../presentation.html#examples" class="btn btn-simple">Examples</a>
-        </li>
-        <li>
-            <a href="https://twitter.com/CreativeTim" target="_blank" class="btn btn-simple">
-      <i class="fa fa-twitter"></i>
-    </a>
-        </li>
-        <li>
-            <a href="https://www.facebook.com/CreativeTim" target="_blank" class="btn btn-simple">
-      <i class="fa fa-facebook-square"></i>
-    </a>
-        </li>
-  <li>
-            <a href="https://www.instagram.com/CreativeTimOfficial" target="_blank" class="btn btn-simple">
-      <i class="fa fa-instagram"></i>
-    </a>
-        </li>
-       </ul>
-    </div>
+      <div class="collapse navbar-collapse" id="navigation-example">
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <a href="../presentation.html#components" class="btn btn-simple">Components</a>
+            </li>
+            <li>
+                <a href="../presentation.html#examples" class="btn btn-simple">Examples</a>
+            </li>
+            <li>
+                <a href="https://twitter.com/CreativeTim" target="_blank" class="btn btn-simple">
+          <i class="fa fa-twitter"></i>
+        </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/CreativeTim" target="_blank" class="btn btn-simple">
+          <i class="fa fa-facebook-square"></i>
+        </a>
+            </li>
+      <li>
+                <a href="https://www.instagram.com/CreativeTimOfficial" target="_blank" class="btn btn-simple">
+          <i class="fa fa-instagram"></i>
+        </a>
+            </li>
+        </ul>
+      </div>
   </div>
 </nav>
 
@@ -100,7 +99,7 @@
           </div>
 
         <div class="section text-center">
-              <h2 class="title">Let's talk about us</h2>
+              <h2 class="title">Here is our team</h2>
 
       <div class="team">
         <div class="row">
@@ -148,23 +147,34 @@
         <div class="section landing-section">
               <div class="row">
                   <div class="col-md-8 col-md-offset-2">
-                      <h2 class="text-center">Keep in touch?</h2>
+                      <h2 class="text-center title">Work with us</h2>
+          <h4 class="text-center description">Divide details about your product or agency work into parts. Write a few lines about each one and contact us about any further collaboration. We will responde get back to you in a couple of hours.</h4>
                       <form class="contact-form">
                           <div class="row">
                               <div class="col-md-6">
-                                  <label>Name</label>
-                                  <input class="form-control" placeholder="Name">
+                <div class="form-group label-floating">
+                  <label class="control-label">Your Name</label>
+                  <input type="email" class="form-control">
+                </div>
                               </div>
                               <div class="col-md-6">
-                                  <label>Email</label>
-                                  <input class="form-control" placeholder="Email">
+                <div class="form-group label-floating">
+                  <label class="control-label">Your Email</label>
+                  <input type="email" class="form-control">
+                </div>
                               </div>
                           </div>
-                          <label>Message</label>
-                          <textarea class="form-control" rows="4" placeholder="Tell us your thoughts and feelings..."></textarea>
+
+            <div class="form-group label-floating">
+              <label class="control-label">Your Messge</label>
+              <textarea class="form-control" rows="4"></textarea>
+            </div>
+
                           <div class="row">
-                              <div class="col-md-4 col-md-offset-4">
-                                  <button class="btn btn-danger btn-block btn-lg btn-fill">Send Message</button>
+                              <div class="col-md-4 col-md-offset-4 text-center">
+                                  <button class="btn btn-primary btn-raised">
+                  Send Message
+                </button>
                               </div>
                           </div>
                       </form>
@@ -173,16 +183,21 @@
 
           </div>
       </div>
+
 </div>
 
-<footer class="footer-demo section-dark">
+<footer class="footer">
     <div class="container">
         <nav class="pull-left">
             <ul>
-
                 <li>
                     <a href="http://www.creative-tim.com">
                         Creative Tim
+                    </a>
+                </li>
+      <li>
+                    <a href="http://presentation.creative-tim.com">
+                       About Us
                     </a>
                 </li>
                 <li>
@@ -191,7 +206,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="http://www.creative-tim.com/product/rubik">
+                    <a href="http://www.creative-tim.com/license">
                         Licenses
                     </a>
                 </li>

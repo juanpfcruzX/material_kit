@@ -1,3 +1,8 @@
+//= depend_on_asset "material_kit/arrow-left.png"
+//= depend_on_asset "material_kit/arrow-left.cur"
+//= depend_on_asset "material_kit/arrow-right.png"
+//= depend_on_asset "material_kit/arrow-right.cur"
+
 .carousel{
     .carousel-control{
         width: 50%;
@@ -13,10 +18,10 @@
         }
     }
     .left{
-        cursor: url("../img/arrow-left.png"), url("../img/arrow-left.cur"), default !important;
+        cursor: url('<%= image-path("material_kit/arrow-left.png") %>'), url('<%= image-path("material_kit/arrow-left.cur") %>'), default !important;
     }
     .right{
-        cursor: url("../img/arrow-right.png"), url("../img/arrow-right.cur"), default !important;
+        cursor: url('<%= image-path("material_kit/arrow-right.png") %>'), url('<%= image-path("material_kit/arrow-right.cur") %>'), default !important;
     }
 
     .carousel-indicators{
@@ -42,7 +47,7 @@
 
     .carousel-caption{
         padding-bottom: 45px;
-        
+
         .material-icons{
             position: relative;
             top: 5px;

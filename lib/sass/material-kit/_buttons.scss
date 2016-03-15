@@ -92,6 +92,8 @@
   i.material-icons {
     vertical-align: middle;
     font-size: $mdb-btn-icon-size-mini;
+    top: -1px;
+    position: relative;
   }
 
   &.btn-fab {
