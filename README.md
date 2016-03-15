@@ -155,6 +155,14 @@ It is the manifest file using sprockets require directives to require all Materi
 
 Material Kit come with the following page generators to help you create the various pages. It's automatically handle all setup such as routes, controllers and views. By the way, all view layout are based on `_base.html.erb` layout, if you want to use different layout, you can specify it in your controller.
 
+### INDEX PAGE GENERATOR
+
+Generate index page view at app/views/CONTROLLER/ACTION
+
+```
+rails g material_kit:index_page CONTROLLER ACTION
+```
+
 ### LANDING PAGE GENERATOR
 
 Generate landing page view at app/views/CONTROLLER/ACTION
@@ -163,11 +171,43 @@ Generate landing page view at app/views/CONTROLLER/ACTION
 rails g material_kit:landing_page CONTROLLER ACTION
 ```
 
+### PROFILE PAGE GENERATOR
+
+Generate profile page view at app/views/CONTROLLER/ACTION
+
+```
+rails g material_kit:profile_page CONTROLLER ACTION
+```
+
+### SIGNUP PAGE GENERATOR
+
+Generate signup page view at app/views/CONTROLLER/ACTION
+
+```
+rails g material_kit:signup_page CONTROLLER ACTION
+```
+
+### TUTORIAL PAGE GENERATOR
+
+Generate tutorial page view at app/views/CONTROLLER/ACTION
+
+```
+rails g material_kit:tutorial_page CONTROLLER ACTION
+```
+
 [Back to top](#table-of-content)
 
 ## Changelog
 
-2016.03.14 - version alpha
+2016.03.15 - version 0.0.3.0
+
+* Updated README
+
+2016.03.15 - version 0.0.2.0
+
+* Beta Release!
+
+2016.03.14 - version 0.0.1.0
 
 * First Release!
 
