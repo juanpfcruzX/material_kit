@@ -1,8 +1,5 @@
 //= depend_on_asset "material_kit/bg.jpg"
 
-.index-page{
-    background: #FFFFFF;
-}
 .tim-row{
     margin-bottom: 20px;
 }
@@ -70,7 +67,6 @@
 }
 
 .navigation-example{
-
     background-image: url('<%= image_path('material_kit/bg.jpg') %>');
     background-position: center center;
     background-size: cover;
@@ -138,6 +134,7 @@
     margin-top: 7px;
     width: 70px;
     height: 40px;
+    text-align: left;
 }
 .logo-container .brand-material{
     font-size: 18px;
@@ -315,13 +312,37 @@
 .sharing-area{
     margin-top: 80px;
 }
-
+.sharing-area .btn{
+    margin: 15px 4px 0;
+    color: #FFFFFF;
+}
+.sharing-area .btn i{
+    font-size: 18px;
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+}
+.sharing-area .btn-twitter{
+    background-color: #55acee;
+}
+.sharing-area .btn-facebook{
+    background-color: #3b5998;
+}
+.sharing-area .btn-google-plus{
+    background-color: #dd4b39;
+}
+.sharing-area .btn-github{
+    background-color: #333333;
+}
 .section-thin,
 .section-notifications{
     padding: 0;
 }
 .section-navbars{
     padding-top: 0;
+}
+#navbar .navbar{
+    border-radius: 0;
 }
 .section-tabs{
     background: #EEEEEE;
@@ -331,6 +352,12 @@
 }
 .section-download h4{
     margin-bottom: 50px;
+}
+.section-examples a{
+    text-decoration: none;
+}
+.section-examples h5{
+    margin-top: 30px;
 }
 .components-page .wrapper > .header,
 .tutorial-page .wrapper > .header{

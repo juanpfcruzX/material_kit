@@ -18,10 +18,10 @@
         }
     }
     .left{
-        cursor: url('<%= image-path("material_kit/arrow-left.png") %>'), url('<%= image-path("material_kit/arrow-left.cur") %>'), default !important;
+        cursor: url('<%= image_path("material_kit/arrow-left.png")'), url('<%= image_path("material_kit/arrow-left.cur")'), default !important;
     }
     .right{
-        cursor: url('<%= image-path("material_kit/arrow-right.png") %>'), url('<%= image-path("material_kit/arrow-right.cur") %>'), default !important;
+        cursor: url('<%= image_path("material_kit/arrow-right.png")'), url('<%= image_path("material_kit/arrow-right.cur")'), default !important;
     }
 
     .carousel-indicators{

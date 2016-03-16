@@ -4,8 +4,11 @@
         border: 0;
         border-radius: 30px !important;
         transition: all .3s;
-        padding: 6px 16px;
+        padding: 0px 11px;
         margin: 0 3px;
+        min-width: 30px;
+        height: 30px;
+        line-height: 30px;
         color: $gray-color;
         font-weight: $font-weight-default;
         font-size: $mdb-btn-font-size-base;

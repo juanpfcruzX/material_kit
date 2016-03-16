@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
 
   spec.files = Dir["{app,lib}/**/*"].reject{ |f|
                   f['app/assets/javascripts/material_kit/jquery.min.js'] ||
-                  f['mk_alpha.zip'] ||
+                  f['mk_alpha.zip'] ||                  
                   f['x_material_kit_beta.zip'] } +
                Dir["*.gemspec"] +
                ["README.md"]

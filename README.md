@@ -207,6 +207,10 @@ rails g material_kit:components_page CONTROLLER ACTION
 
 ## Changelog
 
+2016.03.16 - version 1.0.0.0
+
+* Added template page generator
+
 2016.03.15 - version 0.0.4.0
 
 * Added components page generator

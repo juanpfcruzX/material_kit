@@ -1,14 +1,18 @@
+.wrapper > .header{
+    min-height: 300px;
+    background-position: center center;
+    background-size: cover;
+}
 .main{
     background: #FFFFFF;
     position: relative;
     z-index: 3;
 
-    &.main-raised{
-        margin: -70px 30px 0px;
-        border-radius: $border-radius-base * 2;
-
-        @include shadow-16dp();
-    }
+}
+.main-raised{
+    margin: -60px 30px 0px;
+    border-radius: $border-radius-base * 2;
+    @include shadow-16dp();
 }
 
 .title{
@@ -119,14 +123,43 @@ h2.title{
     z-index: 1031;
 }
 
-// style for the landing page
+.index-page{
+    .wrapper > .header{
+        height: 90vh;
+    }
+    .brand{
+        margin-top: 30vh;
+        color: #FFFFFF;
+        text-align: center;
 
+        h1{
+            font-size: 4.8em;
+            font-weight: 600;
+        }
+        h3{
+            font-size: 1.5em;
+            text-transform: uppercase;
+            max-width: 400px;
+            margin: 10px auto 0;
+        }
+    }
+    .section-basic{
+        padding-top: 15px;
+    }
+    .header-filter:after{
+        background: rgba(101, 47, 142, 0.64);
+        background: linear-gradient(45deg,  rgba(101, 47, 142, 0.88) 0%, rgba(125, 46, 185, 0.45) 100%);
+        background: -moz-linear-gradient(135deg,  rgba(101, 47, 142, 0.88) 0%, rgba(125, 46, 185, 0.45) 100%);
+        background: -webkit-linear-gradient(135deg,  rgba(101, 47, 142, 0.88) 0%, rgba(125, 46, 185, 0.45) 100%);
+
+    }
+}
+
+// style for the landing page
 .landing-page{
 
     .header{
         height: 100vh;
-        background-position: center center;
-        background-size: cover;
 
         .container{
             padding-top: 26vh;
@@ -155,7 +188,6 @@ h2.title{
     .header{
         height: 380px;
         background-position: top center;
-        background-size: cover;
     }
     .profile{
         text-align: center;
@@ -201,7 +233,8 @@ h2.title{
 }
 .landing-page,
 .profile-page,
-.signup-page{
+.signup-page,
+.index-page{
     .navbar-transparent{
         padding-top: 25px;
     }
@@ -223,5 +256,10 @@ h2.title{
         background-color: rgba(0,0,0,.4);
         padding-top: 10px;
         border-radius: 0;
+    }
+
+    .main-raised{
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
