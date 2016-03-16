@@ -2,7 +2,7 @@
 
 Thanks for trying out Material Kit (Rails Version)! We promise your rails app will look awesome after install it. You can view live preview [here](http://uiready.io/items/material-kit-rails-version/demo).
 
-[![Material Kit](https://raw.githubusercontent.com/UiReady/uiready.github.io/master/images/material_kit_rails_cover.jpg)](https://uiready.io/items/material-kit-rails-version)
+[![Material Kit](https://raw.githubusercontent.com/UiReady/uiready.github.io/master/images/material_kit_rails_blog_cover.jpg)](https://uiready.io/items/material-kit-rails-version)
 
 ## Table of Content
 
@@ -201,6 +201,14 @@ Generate components page view at app/views/CONTROLLER/ACTION
 
 ```
 rails g material_kit:components_page CONTROLLER ACTION
+```
+
+### TEMPLATE PAGE GENERATOR
+
+Generate template page view at app/views/CONTROLLER/ACTION
+
+```
+rails g material_kit:template_page CONTROLLER ACTION
 ```
 
 [Back to top](#table-of-content)
