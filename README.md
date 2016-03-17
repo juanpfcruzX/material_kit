@@ -215,6 +215,10 @@ rails g material_kit:template_page CONTROLLER ACTION
 
 ## Changelog
 
+2016.03.17 - version 1.0.0.1
+
+* Fixed image path issue on _carousel file
+
 2016.03.16 - version 1.0.0.0
 
 * Added template page generator
