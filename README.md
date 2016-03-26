@@ -215,6 +215,10 @@ rails g material_kit:template_page CONTROLLER ACTION
 
 ## Changelog
 
+2016.03.26 - version 1.0.0.2
+
+* Convert all JPEG to JPG since sprockets-rails 3.0 not support
+
 2016.03.17 - version 1.0.0.1
 
 * Fixed image path issue on _carousel file
