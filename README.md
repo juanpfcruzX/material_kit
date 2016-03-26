@@ -37,7 +37,7 @@ If you want to integrate existing rails app, please make sure you have remove al
 2. Install material_kit gem
 
   ```
-  gem 'material_kit', '>= 1.0.0.0'
+  gem 'material_kit', '>= 1.0.0.2'
   ```
 
   Run the following command to install the gem:
